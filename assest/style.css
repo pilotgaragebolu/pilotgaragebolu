@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: math;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    @media screen and (max-width: 600px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #252F3A;
+        height: 98%;
+        border-radius: 30px;
+        @media screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #252F3A;
+            height: 100%;
+            border-radius: 0;
+            width: 100%;
+        }
+        .logo{
+            border: 0 solid #eee;
+            padding: 50px;
+            margin: 20px;
+            border-radius: 25px;
+            background-color: white;
+            @media screen and (max-width: 600px){
+                border: 0 solid #eee;
+                padding: 50px 10px;
+                margin: 20px;
+                border-radius: 25px;
+                background-color: white;
+            }
+            img{
+                @media screen and (max-width: 600px){
+                    width: 100%;
+                }  
+            }
+        }
+        .text{
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                font-size: 18px;
+            }
+        }
+        .inner{
+            .container{
+                background-color: transparent;
+                .inning{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        padding: 0;
+                        li{
+                            list-style: none;
+                            border: 0 solid #eee;
+                            background-color: #ffffff;
+                            padding: 10px 10px;
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+                            border-radius: 10px;
+                            height: 35px;
+                            transition: all 0.5s ease-in-out;
+                            &:hover{
+                                padding: 20px 10px;
+                                box-shadow: 10px 5px 5px red;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: #000;
+                                font-weight: 0;
+                                font-size: 20px;
+                            }
+                            p{
+                                font-size: 20px; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
